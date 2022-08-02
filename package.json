@@ -1,11 +1,13 @@
 {
   "name": "tapris.website",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "npx prettier --write ."
   },
   "dependencies": {
     "next": "12.2.3",
