@@ -15,11 +15,11 @@ const Index: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="min-h-screen">
+			<main className="min-h-screen flex flex-col content-around justify-between">
 				<Navbar />
 
-				<a id="home"></a>
-				<div className="w-full h-screen flex flex-col flex-wrap justify-center items-center">
+				<div className="w-full flex flex-col content-center items-center">
+					<a id="home"></a>
 					<div className="w-72 m-4">
 						<Image
 							alt="Avatar"
@@ -39,9 +39,9 @@ const Index: NextPage = () => {
 						</button>
 					</Link>
 				</div>
-			</main>
 
-			<Footer />
+				<Footer />
+			</main>
 		</div>
 	);
 };
