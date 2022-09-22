@@ -20,7 +20,7 @@ const Commands: NextPage = ({ data }: any) => {
 				<Nav />
 
 				<div>
-					<h1 className="pt-16 text-3xl text-center">My blog</h1>
+					<h1 className="pt-16 text-3xl text-center">Commands</h1>
 
 					<div className="grid p-4 grid-cols-1 md:grid-cols-2">
 						{data.commands
