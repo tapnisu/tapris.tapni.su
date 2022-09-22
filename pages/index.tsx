@@ -19,7 +19,6 @@ const Index: NextPage = () => {
 				<Navbar />
 
 				<div className="w-full flex flex-col content-center items-center">
-					<a id="home"></a>
 					<div className="w-72 m-4">
 						<Image
 							alt="Avatar"
