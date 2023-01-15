@@ -38,7 +38,7 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="min-h-screen flex flex-col justify-center">
+        <div className="flex flex-col justify-center">
           <h1 className="pt-16 text-3xl text-center">Usefull commands</h1>
 
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">

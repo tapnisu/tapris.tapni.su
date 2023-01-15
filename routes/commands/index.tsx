@@ -10,7 +10,7 @@ export default function Commands() {
   return (
     <>
       <Head>
-        <title>Tapris</title>
+        <title>Tapris - Commands</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
           rel="stylesheet"
