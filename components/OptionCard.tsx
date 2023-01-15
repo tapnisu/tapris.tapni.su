@@ -1,4 +1,16 @@
-const OptionCard = ({ option, id }: any) => {
+interface Option {
+  name: string;
+  description: string;
+  type: number;
+  required?: boolean;
+}
+
+interface OptionCardProps {
+  option: Option;
+  id: number;
+}
+
+const OptionCard = ({ option, id }: OptionCardProps) => {
   return (
     <>
       <div className="bg-gray-900 m-2 p-8 rounded-3xl">
