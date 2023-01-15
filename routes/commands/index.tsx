@@ -26,7 +26,11 @@ export default function Commands() {
         <div className="grid p-4 grid-cols-1 md:grid-cols-2">
           {commands
             .map((command) => (
-              <CommandCard command={command} id={i} key={i++} />
+              <CommandCard
+                command={command}
+                id={i}
+                key={i++}
+              />
             ))
             .reverse()}
         </div>
