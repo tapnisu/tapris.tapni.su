@@ -8,7 +8,7 @@ import commands from "../../json/commands.json" assert { type: "json" };
 export default function Command(props: PageProps) {
   let i = 0;
 
-  let commandFind = commands.find(
+  const commandFind = commands.find(
     (command) => command.name == props.params.name
   );
 
