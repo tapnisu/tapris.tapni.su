@@ -9,7 +9,7 @@ export default function Command(props: PageProps) {
   let i = 0;
 
   let commandFind = commands.find(
-    (command) => command.name == props.params.name
+    (command) => command.name == props.params.name,
   );
 
   const command = commandFind
@@ -41,8 +41,8 @@ export default function Command(props: PageProps) {
             {command.options && command.options.length > 0
               ? command.options
                 ? command.options.map((option) => (
-                    <OptionCard option={option} id={i} key={i++} />
-                  ))
+                  <OptionCard option={option} id={i} key={i++} />
+                ))
                 : ""
               : ""}
           </div>
