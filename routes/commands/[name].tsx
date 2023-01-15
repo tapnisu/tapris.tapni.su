@@ -9,7 +9,7 @@ export default function Command(props: PageProps) {
   let i = 0;
 
   const commandFind = commands.find(
-    (command) => command.name == props.params.name
+    (command) => command.name == props.params.name,
   );
 
   const command = commandFind
