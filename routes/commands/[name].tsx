@@ -1,15 +1,27 @@
 import { Head } from "$fresh/runtime.ts";
-import { PageProps } from "$fresh/server.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
+import { Command } from "@types/Command.ts";
 import Footer from "../../components/Footer.tsx";
 import Navbar from "../../components/Navbar.tsx";
 import OptionCard from "../../components/OptionCard.tsx";
 import commands from "../../json/commands.json" assert { type: "json" };
 
-export default function Command(props: PageProps) {
+export const handler: Handlers<Command> = {
+  async GET(_, ctx) {
+    const request = await fetch(
+      `https://tapris-bot.deno.dev/api/v1/commands/${ctx.params.name}`
+    );
+    const command: Command = await request.json();
+
+    return ctx.render(command);
+  },
+};
+
+export default function GetCommand(props: PageProps<Command>) {
   let i = 0;
 
   const commandFind = commands.find(
-    (command) => command.name == props.params.name,
+    (command) => command.name == props.params.name
   );
 
   const command = commandFind
@@ -41,8 +53,8 @@ export default function Command(props: PageProps) {
             {command.options && command.options.length > 0
               ? command.options
                 ? command.options.map((option) => (
-                  <OptionCard option={option} id={i} key={i++} />
-                ))
+                    <OptionCard option={option} id={i} key={i++} />
+                  ))
                 : ""
               : ""}
           </div>
