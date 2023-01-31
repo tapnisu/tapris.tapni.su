@@ -81,8 +81,8 @@ export default function Home(props: PageProps<Command[]>) {
 
             <img src="/deno.svg" alt="Deno logo" className="m-4 w-32" />
           </div>
-          <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&scope=bot+applications.commands&permissions=294208515334">
-            <Button>View bot sourse code</Button>
+          <a href="https://github.com/tapris-bot/tapris">
+            <Button disabled={true}>View bot's sourse code</Button>
           </a>
         </div>
 
