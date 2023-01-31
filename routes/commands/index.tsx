@@ -1,10 +1,20 @@
 import { Head } from "$fresh/runtime.ts";
+import { Handlers, PageProps } from "https://deno.land/x/fresh@1.1.2/server.ts";
 import CommandCard from "../../components/CommandCard.tsx";
 import Footer from "../../components/Footer.tsx";
 import Navbar from "../../components/Navbar.tsx";
-import commands from "../../json/commands.json" assert { type: "json" };
+import { Command } from "../../types/Command.ts";
 
-export default function Commands() {
+export const handler: Handlers<Command[]> = {
+  async GET(_, ctx) {
+    const request = await fetch("https://tapris-bot.deno.dev/api/v1/commands");
+    const command: Command[] = await request.json();
+
+    return ctx.render(command);
+  },
+};
+
+export default function Commands(props: PageProps<Command[]>) {
   let i = 0;
 
   return (
@@ -20,21 +30,16 @@ export default function Commands() {
 
       <Navbar />
 
-      <div className="bg-black text-white">
+      <div className="bg-black text-white min-h-screen">
         <h1 className="pt-16 text-3xl text-center">Commands</h1>
 
         <div className="grid p-4 grid-cols-1 md:grid-cols-2">
-          {commands
+          {props.data
             .map((command) => (
-              <CommandCard
-                command={command}
-                id={i}
-                key={i++}
-              />
+              <CommandCard command={command} id={i} key={i++} />
             ))
             .reverse()}
         </div>
-
         <Footer />
       </div>
     </>

@@ -1,12 +1,7 @@
-interface Option {
-  name: string;
-  description: string;
-  type: number;
-  required?: boolean;
-}
+import { ApplicationCommandOptionExtended } from "../types/Command.ts";
 
 interface OptionCardProps {
-  option: Option;
+  option: ApplicationCommandOptionExtended;
   id: number;
 }
 

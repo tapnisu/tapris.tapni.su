@@ -1,7 +1,7 @@
-import commands from "../json/commands.json" assert { type: "json" };
+import { Command } from "../types/Command.ts";
 
 interface CommandCardProps {
-  command: typeof commands[0];
+  command: Command;
   id: number;
 }
 

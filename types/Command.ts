@@ -1,6 +1,6 @@
 import { ApplicationCommandOption } from "harmony/src/types/applicationCommand.ts";
 
-type ApplicationCommandOptionExtended = ApplicationCommandOption & {
+export type ApplicationCommandOptionExtended = ApplicationCommandOption & {
   required: boolean;
 };
 
