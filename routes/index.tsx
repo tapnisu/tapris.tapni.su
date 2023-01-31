@@ -1,5 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
-import { Handlers, PageProps } from "https://deno.land/x/fresh@1.1.2/server.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
 import { Button } from "../components/Button.tsx";
 import CommandCard from "../components/CommandCard.tsx";
 import Footer from "../components/Footer.tsx";
