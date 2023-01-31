@@ -28,9 +28,9 @@ export default function Commands(props: PageProps<Command[]>) {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <Navbar />
-
       <div className="bg-black text-white min-h-screen">
+        <Navbar />
+
         <h1 className="pt-16 text-3xl text-center">Commands</h1>
 
         <div className="grid p-4 grid-cols-1 md:grid-cols-2">
@@ -40,6 +40,7 @@ export default function Commands(props: PageProps<Command[]>) {
             ))
             .reverse()}
         </div>
+
         <Footer />
       </div>
     </>

@@ -8,9 +8,7 @@ import { Command } from "../types/Command.ts";
 
 export const handler: Handlers<Command[]> = {
   async GET(_, ctx) {
-    const request = await fetch(
-      "https://tapris-bot.deno.dev/api/v1/commands"
-    );
+    const request = await fetch("https://tapris-bot.deno.dev/api/v1/commands");
     const command: Command[] = await request.json();
 
     return ctx.render(command);
@@ -31,10 +29,10 @@ export default function Home(props: PageProps<Command[]>) {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <Navbar />
+      <div className="bg-black text-white min-h-screen relative">
+        <Navbar />
 
-      <div className="bg-black text-white">
-        <div className="min-h-screen flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
           <div className="flex flex-col items-center p-2">
             <img
               src="/avatar.png"
@@ -56,7 +54,7 @@ export default function Home(props: PageProps<Command[]>) {
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
             {props.data
               .filter((command) =>
-                ["color", "clear", "avatar", "user"].includes(command.name)
+                ["color", "help", "avatar", "user"].includes(command.name)
               )
               .map((command) => (
                 <CommandCard command={command} id={i} key={i++} />

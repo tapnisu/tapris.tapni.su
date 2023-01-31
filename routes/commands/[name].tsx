@@ -31,10 +31,10 @@ export default function GetCommand(props: PageProps<Command>) {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <Navbar />
+      <div className="bg-black text-white min-h-screen">
+        <Navbar />
 
-      <div className="bg-black text-white">
-        <div className="flex min-h-screen flex-wrap content-center justify-center items-center">
+        <div className="flex flex-wrap content-center justify-center items-center">
           <div className="p-8">
             <span className="text-3xl">
               <span className="text-indigo-400">/{props.data.name}</span> -{" "}
@@ -50,6 +50,7 @@ export default function GetCommand(props: PageProps<Command>) {
               : ""}
           </div>
         </div>
+
         <Footer />
       </div>
     </>
