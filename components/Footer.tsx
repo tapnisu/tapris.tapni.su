@@ -11,7 +11,7 @@ const Footer = () => {
             / {""}
             <a href="https://discord.gg/TwtSs7NY9t">Discord Server</a>
           </span>
-          Copyright © 2022 Alexiy Rybin
+          Copyright © 2023 Alexiy Rybin
         </div>
       </footer>
     </>
