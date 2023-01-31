@@ -10,6 +10,9 @@ const Navbar = () => {
             <li className="inline-block m-2 mx-4">
               <a href="/commands">Commands</a>
             </li>
+            <li className="inline-block m-2 mx-4">
+              <a href="https://tapris-bot.deno.dev/api">Api</a>
+            </li>
           </ul>
         </div>
       </nav>
