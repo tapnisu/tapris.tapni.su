@@ -32,7 +32,7 @@ export default function Home(props: PageProps<Command[]>) {
       <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center p-4">
           <div className="flex flex-col items-center p-2">
             <img
               src="/avatar.png"
@@ -48,7 +48,7 @@ export default function Home(props: PageProps<Command[]>) {
           </a>
         </div>
 
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center my-4">
           <h1 className="pt-16 text-3xl text-center">Usefull commands</h1>
 
           <div className="grid p-4 grid-cols-1 md:grid-cols-2">
@@ -61,6 +61,29 @@ export default function Home(props: PageProps<Command[]>) {
               ))
               .reverse()}
           </div>
+        </div>
+
+        <div className="text-white text-center flex flex-col items-center p-4 py-16 my-4">
+          <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
+            <h1 className="text-2xl font-bold m-4">
+              Built without love using{" "}
+              <a href="https://deno.land/" className="underline">
+                Deno
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://github.com/harmonyland/harmony"
+                className="underline"
+              >
+                @harmonyland/harmony
+              </a>
+            </h1>
+
+            <img src="/deno.svg" alt="Deno logo" className="m-4 w-32" />
+          </div>
+          <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&scope=bot+applications.commands&permissions=294208515334">
+            <Button>View bot sourse code</Button>
+          </a>
         </div>
 
         <Footer />
