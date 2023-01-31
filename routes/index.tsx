@@ -29,7 +29,7 @@ export default function Home(props: PageProps<Command[]>) {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <div className="bg-black text-white min-h-screen relative">
+      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
         <div className="flex flex-col justify-center items-center">

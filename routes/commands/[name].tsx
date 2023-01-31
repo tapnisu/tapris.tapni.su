@@ -31,7 +31,7 @@ export default function GetCommand(props: PageProps<Command>) {
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
-      <div className="bg-black text-white min-h-screen">
+      <div className="bg-black text-white min-h-screen flex flex-col justify-between">
         <Navbar />
 
         <div className="flex flex-wrap content-center justify-center items-center">
