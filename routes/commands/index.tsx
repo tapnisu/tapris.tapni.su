@@ -36,7 +36,11 @@ export default function Commands(props: PageProps<Command[]>) {
         <div className="grid p-4 grid-cols-1 md:grid-cols-2">
           {props.data
             .map((command) => (
-              <CommandCard command={command} id={i} key={i++} />
+              <CommandCard
+                command={command}
+                id={i}
+                key={i++}
+              />
             ))
             .reverse()}
         </div>

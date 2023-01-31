@@ -8,7 +8,7 @@ import { Command } from "../../types/Command.ts";
 export const handler: Handlers<Command> = {
   async GET(_, ctx) {
     const request = await fetch(
-      `https://tapris-bot.deno.dev/api/v1/commands/${ctx.params.name}`
+      `https://tapris-bot.deno.dev/api/v1/commands/${ctx.params.name}`,
     );
     const command: Command = await request.json();
 
@@ -44,8 +44,8 @@ export default function GetCommand(props: PageProps<Command>) {
             {props.data.options && props.data.options.length > 0
               ? props.data.options
                 ? props.data.options.map((option) => (
-                    <OptionCard option={option} id={i} key={i++} />
-                  ))
+                  <OptionCard option={option} id={i} key={i++} />
+                ))
                 : ""
               : ""}
           </div>
