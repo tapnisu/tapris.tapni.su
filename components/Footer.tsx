@@ -4,7 +4,7 @@ const Footer = () => {
       <footer className="bottom-0 w-full ">
         <div className="flex flex-row flex-wrap justify-between p-8">
           <span className="uppercase">
-            <a href="https://github.com/tapnisu/tapris">Github</a> / {""}
+            <a href="https://github.com/tapris-bot/tapris">Github</a> / {""}
             <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&scope=bot+applications.commands&permissions=294208515334">
               Invite
             </a>{" "}
