@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-import { Button } from "../components/Button.tsx";
 import CommandCard from "../components/CommandCard.tsx";
+import { Button } from "../components/FakeButton.tsx";
 import Footer from "../components/Footer.tsx";
 import Navbar from "../components/Navbar.tsx";
 import { Command } from "../types/Command.ts";
@@ -44,7 +44,10 @@ export default function Home(props: PageProps<Command[]>) {
           <h1 className="text-3xl m-2">Tapris</h1>
           <p className="m-2 text-center">Multipurpose discord bot</p>
           <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&scope=bot+applications.commands&permissions=294208515334">
-            <Button>Invite</Button>
+            <Button>
+              {" "}
+              <p> Invite </p>
+            </Button>
           </a>
         </div>
 
@@ -82,7 +85,7 @@ export default function Home(props: PageProps<Command[]>) {
             <img src="/deno.svg" alt="Deno logo" className="m-4 w-32" />
           </div>
           <a href="https://github.com/tapris-bot/tapris">
-            <Button disabled={true}>View bot's sourse code</Button>
+            <Button>View bot's sourse code</Button>
           </a>
         </div>
 
