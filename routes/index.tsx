@@ -46,7 +46,7 @@ export default function Home(props: PageProps<Command[]>) {
           <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&scope=bot+applications.commands&permissions=294208515334">
             <Button>
               {" "}
-              <p> Invite </p>
+              <p>Invite</p>
             </Button>
           </a>
         </div>
