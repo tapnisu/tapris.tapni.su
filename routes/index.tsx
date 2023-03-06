@@ -35,7 +35,7 @@ export default function Home(props: PageProps<Command[]>) {
         <div className="flex flex-col justify-center items-center p-4">
           <div className="flex flex-col items-center p-2">
             <img
-              src="/avatar.png"
+              src="/avatar.webp"
               class="w-72 h-72 rounded-full"
               alt="Avatar"
             />
