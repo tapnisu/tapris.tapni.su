@@ -16,7 +16,7 @@ export default function Commands(props: PageProps<Command[]>) {
   let i = 0;
 
   return (
-    <BasePageLayout title="Tapris - Commands" description="Commands for tapris">
+    <BasePageLayout title="Tapris - Commands" description="Commands for Tapris">
       <h1 className="pt-16 text-3xl text-center">Commands</h1>
 
       <div className="grid p-4 grid-cols-1 md:grid-cols-2 md:mx-16">
