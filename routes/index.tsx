@@ -15,11 +15,12 @@ export default function Home() {
             class="w-72 rounded-full"
           />
           <div class="flex flex-col justify-center items-center m-4">
-            <div>
-              <h1 class="text-3xl">Tapris</h1>
-              <h2>Discord bot, written in deno.</h2>
-            </div>
-            <Button>oh hi</Button>
+            <h1 class="text-3xl">Tapris</h1>
+            <h2>Discord bot, written in deno.</h2>
+
+            <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&permissions=1393753648390&scope=bot%20applications.commands">
+              <Button>Invite bot</Button>
+            </a>
           </div>
         </div>
       </BasePageLayout>
