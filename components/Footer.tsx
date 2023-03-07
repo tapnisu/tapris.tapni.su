@@ -1,6 +1,7 @@
 const Footer = () => (
   <footer className="text-gray-800 dark:text-gray-400 bg-gradient-to-b from-transparent to-indigo-300 dark:to-gray-900 p-8">
-    <div className="mx-auto w-24 h-1 my-12 bg-gray-800 dark:bg-white rounded-full"></div>
+    <div className="mx-auto w-24 h-1 my-12 bg-gray-800 dark:bg-white rounded-full">
+    </div>
 
     <div className="flex flex-row flex-wrap items-center justify-around">
       <div>
