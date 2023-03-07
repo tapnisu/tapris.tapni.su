@@ -7,7 +7,7 @@ const Navbar = () => (
           name: "Commands",
           url: "/commands",
         },
-        { name: "Api", url: "https://tapris-bot.deno.dev/api/" },
+        { name: "Api", url: "https://tapris-bot.deno.dev/api/v1" },
       ]?.map((info: { name: string; url: string }) => (
         <li className="inline-block m-4" key={info.name}>
           <a
