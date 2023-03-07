@@ -1,4 +1,5 @@
 import BasePageLayout from "../components/BasePageLayout.tsx";
+import Button from "../components/Button.tsx";
 
 export default function Home() {
   return (
@@ -13,9 +14,12 @@ export default function Home() {
             alt="Tapris's avatar"
             class="w-72 rounded-full"
           />
-          <div class="flex flex-col justify-center m-4">
-            <h1 class="text-3xl">Tapris</h1>
-            <h2>Discord bot, written in deno.</h2>
+          <div class="flex flex-col justify-center items-center m-4">
+            <div>
+              <h1 class="text-3xl">Tapris</h1>
+              <h2>Discord bot, written in deno.</h2>
+            </div>
+            <Button>oh hi</Button>
           </div>
         </div>
       </BasePageLayout>

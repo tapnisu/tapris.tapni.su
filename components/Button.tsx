@@ -5,13 +5,15 @@ interface Props {
   children: ComponentChildren;
 }
 
-export function Button(props: Props) {
+const Button = (props: Props) => {
   return (
     <div
       disabled={!IS_BROWSER}
-      className="bg-indigo-400 hover:bg-indigo-600 text-white m-4 p-4 rounded-full transition-colors"
+      className="bg-indigo-400 hover:bg-indigo-600 text-white m-4 px-8 py-4 rounded-full transition-colors"
     >
       {props.children}
     </div>
   );
-}
+};
+
+export default Button;
