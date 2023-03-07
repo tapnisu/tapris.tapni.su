@@ -1,7 +1,7 @@
 import { Handlers, PageProps } from "$fresh/server.ts";
-import BasePageLayout from "../../components/BasePageLayout.tsx";
-import OptionCard from "../../components/OptionCard.tsx";
-import { Command } from "../../typings/Command.ts";
+import BasePageLayout from "@components/BasePageLayout.tsx";
+import OptionCard from "@components/OptionCard.tsx";
+import { Command } from "@typings/Command.ts";
 
 export const handler: Handlers<Command> = {
   async GET(_, ctx) {

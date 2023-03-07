@@ -1,4 +1,4 @@
-import { Command } from "../typings/Command.ts";
+import { Command } from "@typings/Command.ts";
 
 interface CommandCardProps {
   command: Command;

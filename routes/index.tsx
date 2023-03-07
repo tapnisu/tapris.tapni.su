@@ -1,5 +1,5 @@
-import BasePageLayout from "../components/BasePageLayout.tsx";
-import Button from "../components/Button.tsx";
+import BasePageLayout from "@components/BasePageLayout.tsx";
+import Button from "@components/Button.tsx";
 
 export default function Home() {
   return (
