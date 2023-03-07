@@ -1,4 +1,4 @@
-import { ApplicationCommandOptionExtended } from "../types/Command.ts";
+import { ApplicationCommandOptionExtended } from "@typings/Command.ts";
 
 interface OptionCardProps {
   option: ApplicationCommandOptionExtended;

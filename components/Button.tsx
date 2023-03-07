@@ -1,13 +1,19 @@
 import { IS_BROWSER } from "$fresh/runtime.ts";
-import { JSX } from "preact";
+import { ComponentChildren } from "preact";
 
-export function Button(props: JSX.HTMLAttributes<HTMLButtonElement>) {
-  return (
-    <button
-      {...props}
-      disabled={!IS_BROWSER || props.disabled}
-      className="bg-indigo-400 hover:bg-indigo-600 text-white m-4 p-4 rounded-full transition-colors"
-      type="button"
-    />
-  );
+interface Props {
+  children: ComponentChildren;
 }
+
+const Button = (props: Props) => {
+  return (
+    <div
+      disabled={!IS_BROWSER}
+      className="bg-indigo-400 hover:bg-indigo-600 text-white m-4 px-8 py-4 rounded-full transition-colors"
+    >
+      {props.children}
+    </div>
+  );
+};
+
+export default Button;

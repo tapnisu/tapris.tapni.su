@@ -1,23 +1,25 @@
-const Navbar = () => {
-  return (
-    <>
-      <nav className="sticky top-0 flex justify-center w-full">
-        <div className="bg-gray-900 text-white rounded-full m-2 p-2">
-          <ul>
-            <li className="inline-block m-2 mx-4">
-              <a href="/">Home</a>
-            </li>
-            <li className="inline-block m-2 mx-4">
-              <a href="/commands">Commands</a>
-            </li>
-            <li className="inline-block m-2 mx-4">
-              <a href="https://tapris-bot.deno.dev/api">Api</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
-  );
-};
+const Navbar = () => (
+  <nav className="sticky top-0 flex flex-row flex-nowrap w-full bg-black overflow-x-auto overflow-y-hidden whitespace-nowrap">
+    <ul className="mx-2">
+      {[
+        { name: "Home", url: "/" },
+        {
+          name: "Commands",
+          url: "/commands",
+        },
+        { name: "Api", url: "https://tapris-bot.deno.dev/api/v1" },
+      ]?.map((info: { name: string; url: string }) => (
+        <li className="inline-block m-4" key={info.name}>
+          <a
+            href={info.url}
+            className="hover:text-indigo-400 transition-colors"
+          >
+            {info.name}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
 
 export default Navbar;
