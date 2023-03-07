@@ -1,25 +1,23 @@
 const Footer = () => (
   <footer className="text-gray-400 bg-gradient-to-b from-transparent to-gray-900 p-8">
+    <div className="mx-auto w-24 h-1 my-12 bg-white rounded-full"></div>
+
     <div className="flex flex-row flex-wrap items-center justify-around">
       <div>
-        <h2 className="text-xl">Social media</h2>
+        <h2 className="text-xl">Links</h2>
         <ul className="p-4 list-disc">
           {[
             {
-              name: "Github: tapnisu",
-              url: "https://github.com/tapnisu",
+              name: "Invite",
+              url: "https://discord.com/api/oauth2/authorize?client_id=869088074758520832&permissions=1393753648390&scope=bot%20applications.commands",
             },
             {
-              name: "Discord: (tapnisu#7384)",
-              url: "https://discord.com/users/586128640136445964",
+              name: "Github",
+              url: "https://github.com/tapris-bot/tapris",
             },
             {
-              name: "Twitter: @tapnisu",
-              url: "https://twitter.com/tapnisu",
-            },
-            {
-              name: "Telegram: @tapnisu",
-              url: "https://t.me/tapnisu",
+              name: "Core developer",
+              url: "https://tapni.su",
             },
           ]?.map((info: { name: string; url: string }) => (
             <li key={info.name}>
@@ -35,10 +33,10 @@ const Footer = () => (
       </div>
 
       <h3 className="p-4">
-        © 2023 Alexiy Rybin. All rights reserved.
+        © 2023 Tapris Bot. All rights reserved.
         <br />
         <a
-          href="https://github.com/tapnisu/website"
+          href="https://github.com/tapris-bot/website"
           className="font-mono italic hover:text-indigo-400 transition-colors"
         >
           Check website{"'"}s source code {"<-"}
