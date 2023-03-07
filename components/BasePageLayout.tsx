@@ -15,7 +15,7 @@ const BasePageLayout = ({ title, description, children }: BaseLayoutProps) => (
       <meta name="description" content={description} />
     </header>
 
-    <main className="bg-white text-black dark:bg-black dark:text-white min-h-screen flex flex-col justify-between">
+    <main className="bg-black text-white min-h-screen flex flex-col justify-between">
       <Navbar />
       {children}
       <Footer />

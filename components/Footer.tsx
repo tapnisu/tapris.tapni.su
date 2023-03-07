@@ -1,8 +1,5 @@
 const Footer = () => (
-  <footer className="text-gray-800 dark:text-gray-400 bg-gradient-to-b from-transparent to-indigo-300 dark:to-gray-900 p-8">
-    <div className="mx-auto w-24 h-1 my-12 bg-gray-800 dark:bg-white rounded-full">
-    </div>
-
+  <footer className="text-gray-400 bg-gradient-to-b from-transparent to-gray-900 p-8">
     <div className="flex flex-row flex-wrap items-center justify-around">
       <div>
         <h2 className="text-xl">Social media</h2>
@@ -28,7 +25,7 @@ const Footer = () => (
             <li key={info.name}>
               <a
                 href={info.url}
-                className="hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors flex flex-row items-center"
+                className="hover:text-indigo-400 transition-colors flex flex-row items-center"
               >
                 {info.name}
               </a>
@@ -42,7 +39,7 @@ const Footer = () => (
         <br />
         <a
           href="https://github.com/tapnisu/website"
-          className="font-mono italic hover:text-indigo-600 hover:dark:text-indigo-400 transition-colors"
+          className="font-mono italic hover:text-indigo-400 transition-colors"
         >
           Check website{"'"}s source code {"<-"}
         </a>
