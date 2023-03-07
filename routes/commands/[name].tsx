@@ -23,10 +23,6 @@ export default function GetCommand(props: PageProps<Command>) {
     <>
       <Head>
         <title>Tapris - Commands - {props.params.name}</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
-          rel="stylesheet"
-        />
         <meta name="description" />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>

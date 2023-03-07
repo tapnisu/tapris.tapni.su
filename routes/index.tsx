@@ -22,10 +22,6 @@ export default function Home(props: PageProps<Command[]>) {
     <>
       <Head>
         <title>Tapris</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap"
-          rel="stylesheet"
-        />
         <link rel="stylesheet" href="/globals.css" type="text/css" />
       </Head>
 
