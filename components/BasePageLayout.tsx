@@ -1,11 +1,11 @@
-import { JSX } from "preact/jsx-runtime";
+import { ComponentChildren } from "preact";
 import Footer from "./Footer.tsx";
 import Navbar from "./Navbar.tsx";
 
 export interface BaseLayoutProps {
   title: string;
   description: string;
-  children: string | JSX.Element | JSX.Element[];
+  children: ComponentChildren;
 }
 
 const BasePageLayout = ({ title, description, children }: BaseLayoutProps) => (
