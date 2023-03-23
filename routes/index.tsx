@@ -18,7 +18,7 @@ export default function Home() {
             <h1 class="text-3xl">Tapris</h1>
             <h2>Discord bot, written in deno.</h2>
 
-            <a href="https://discord.com/api/oauth2/authorize?client_id=869088074758520832&permissions=1393753648390&scope=bot%20applications.commands">
+            <a href="/invite">
               <Button>Invite bot</Button>
             </a>
           </div>
