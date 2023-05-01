@@ -9,8 +9,7 @@ const Footer = () => (
           {[
             {
               name: "Invite",
-              url:
-                "https://discord.com/api/oauth2/authorize?client_id=869088074758520832&permissions=1393753648390&scope=bot%20applications.commands",
+              url: "https://discord.com/api/oauth2/authorize?client_id=869088074758520832&permissions=1393753648390&scope=bot%20applications.commands",
             },
             {
               name: "Github",
