@@ -6,6 +6,12 @@
   "importMap": "./import_map.json",
   "lock": false,
   "tasks": {
-    "start": "deno run -A --watch=static/,routes/ dev.ts"
+    "cache": "deno cache main.ts",
+    "check": "deno check main.ts",
+    "compile": "deno compile -A main.ts",
+    "dev": "deno run -A --watch=static/,routes/ dev.ts",
+    "fmt": "deno run --allow-read --allow-write --allow-sys --allow-env npm:prettier . --write",
+    "lint": "deno lint",
+    "start": "deno run -A main.ts"
   }
 }
