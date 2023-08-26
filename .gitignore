@@ -7,3 +7,6 @@
 
 # Executable
 *.exe
+
+# Build
+_fresh
