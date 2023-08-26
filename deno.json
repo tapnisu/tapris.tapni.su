@@ -25,8 +25,8 @@
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.1",
     "preact/": "https://esm.sh/preact@10.17.1/",
     "preact": "https://esm.sh/preact@10.17.1",
-    "twind": "https://esm.sh/twind@0.16.19",
-    "twind/": "https://esm.sh/twind@0.16.19/"
+    "twind": "https://esm.sh/@twind/core@1.1.3",
+    "twind/": "https://esm.sh/@twind/core@1.1.3/"
   },
   "lint": {
     "rules": {

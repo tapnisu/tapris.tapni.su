@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="text-gray-400 bg-gradient-to-b from-transparent to-gray-900 p-8">
+  <footer className="text-neutral-400 bg-gradient-to-b from-transparent to-neutral-900 p-8">
     <div className="mx-auto w-24 h-1 my-12 bg-white rounded-full"></div>
 
     <div className="flex flex-row flex-wrap items-center justify-around">

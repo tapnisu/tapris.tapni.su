@@ -1,18 +1,10 @@
-import { Options } from "$fresh/plugins/twind.ts";
-import * as colors from "twind/colors";
+import presetAutoprefix from "https://esm.sh/@twind/preset-autoprefix@1.0.7";
+import presetTailwind from "https://esm.sh/@twind/preset-tailwind@1.1.4";
+import { defineConfig, Preset } from "twind";
 
 export default {
+  ...defineConfig({
+    presets: [presetTailwind() as Preset, presetAutoprefix()],
+  }),
   selfURL: import.meta.url,
-  theme: {
-    colors: {
-      blue: colors.blue,
-      black: colors.black,
-      gray: colors.gray,
-      indigo: colors.indigo,
-      green: colors.green,
-      white: colors.white,
-      yellow: colors.yellow,
-      transparent: "transparent",
-    },
-  },
-} as Options;
+};
