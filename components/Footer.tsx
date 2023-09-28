@@ -17,7 +17,7 @@ const Footer = () => (
             },
             {
               name: "Core developer",
-              url: "https://tapnisu.ru",
+              url: "https://tapni.su",
             },
           ]?.map((info: { name: string; url: string }) => (
             <li key={info.name}>
