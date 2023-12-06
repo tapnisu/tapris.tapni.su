@@ -6,7 +6,7 @@ import { Command } from "@typings/Command.ts";
 export const handler: Handlers<Command> = {
   async GET(_, ctx) {
     const request = await fetch(
-      `https://tapris-bot.deno.dev/api/v1/commands/${ctx.params.name}`
+      `https://tapris-bot.deno.dev/api/v1/commands/${ctx.params.name}`,
     );
     const command: Command = await request.json();
 
