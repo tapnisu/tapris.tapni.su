@@ -5,8 +5,7 @@
 .env.production.local
 .env.local
 
-# Executable
-*.exe
-
-# Build
-_fresh
+# Fresh build directory
+_fresh/
+# npm dependencies
+node_modules/

@@ -2,24 +2,26 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $0 from "./routes/_app.tsx";
-import * as $1 from "./routes/commands/[name].tsx";
-import * as $2 from "./routes/commands/index.tsx";
-import * as $3 from "./routes/github.ts";
-import * as $4 from "./routes/index.tsx";
-import * as $5 from "./routes/invite.ts";
+import * as $_app from "./routes/_app.tsx";
+import * as $commands_name_ from "./routes/commands/[name].tsx";
+import * as $commands_index from "./routes/commands/index.tsx";
+import * as $github from "./routes/github.ts";
+import * as $index from "./routes/index.tsx";
+import * as $invite from "./routes/invite.ts";
+
+import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
-    "./routes/_app.tsx": $0,
-    "./routes/commands/[name].tsx": $1,
-    "./routes/commands/index.tsx": $2,
-    "./routes/github.ts": $3,
-    "./routes/index.tsx": $4,
-    "./routes/invite.ts": $5,
+    "./routes/_app.tsx": $_app,
+    "./routes/commands/[name].tsx": $commands_name_,
+    "./routes/commands/index.tsx": $commands_index,
+    "./routes/github.ts": $github,
+    "./routes/index.tsx": $index,
+    "./routes/invite.ts": $invite,
   },
   islands: {},
   baseUrl: import.meta.url,
-};
+} satisfies Manifest;
 
 export default manifest;
