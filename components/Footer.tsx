@@ -33,7 +33,7 @@ const Footer = () => (
       </div>
 
       <h3 className="p-4">
-        © 2023 Tapris Bot. All rights reserved.
+        © 2024 Tapris Bot. All rights reserved.
         <br />
         <a
           href="https://github.com/tapris-bot/website"
