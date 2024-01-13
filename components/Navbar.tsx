@@ -11,7 +11,7 @@ const Navbar = () => (
               {info.name}
             </a>
           </li>
-        )
+        ),
       )}
     </ul>
   </nav>
